@@ -5,13 +5,13 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <meta name="theme-color" content="#ffffff">
+  <meta name="theme-color" content="#F8F9FA">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="white">
   <meta name="apple-mobile-web-app-title" content="Foss Forum">
-  <link rel="apple-touch-icon" href="images/logo-60x50.png">
+  <link rel="apple-touch-icon" href="images/fossforum-logocorp.png">
 
-  <title>Fos Forum</title>
+  <title>Foss Forum</title>
   <!-- bootstrap css-->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
 
@@ -30,12 +30,11 @@
 </head>
 
 <body>
-
   <header>
-    <nav class="navbar navbar-expand navbar-light justify-content-around bg-light">
-      <a class="navbar-brand" href="#"><img src="images/fossforum-logo.png" width="80" height="30" alt=""></a>
-      <form class="form-inline">
-        <input class="form-control w-50 h-50 mr-sm-2 " type="search" placeholder="Search" aria-label="Search">
+    <nav class="navbar fixed-top navbar-expand navbar-light justify-content-around bg-light">
+      <a class="navbar-brand mr-0" href="#"><img src="images/fossforum-logo.png" width="72" height="30" alt=""></a>
+      <form class="form-inline justify-content-center">
+        <input class="form-control w-50 h-50 mr-sm-2" type="search" placeholder="Search" aria-label="Search">
         <button class="btn btn btn-outline-info my-2 my-sm-0 h-25 ml-2" type="submit"><i class="pe-7s-search"></i></button>
       </form>
       <a href="#"><i class="pe-7s-paper-plane pe-2x"></i></a>
@@ -45,28 +44,60 @@
 
     <nav class="navbar p-0 navbar-expand fixed-bottom navbar-light bg-light">
       <ul class="nav list-unstyled w-100 m-0 d-flex flex-row flex-nowrap justify-content-around">
-      <li class="nav-item active">
-        <a class="nav-link " href="#"><i class="pe-7s-home pe-2x pe-va pe-fw"></i><span class="sr-only">(current)</span></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link disabled" href="#"><i class="pe-7s-network pe-2x pe-va pe-fw"></i></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="ask.html"><i class="pe-7s-pen pe-2x pe-fw"></i></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link disabled" href="#"><i class="pe-7s-bell pe-2x pe-va pe-fw"></i></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link disabled" href="#"><i class="pe-7s-user pe-2x pe-va pe-fw"></i></a>
-      </li>
-    </ul>
+        <li class="nav-item active">
+          <a class="nav-link " href="#"><i class="pe-7s-home pe-2x pe-va pe-fw"></i><span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="#"><i class="pe-7s-network pe-2x pe-va pe-fw"></i></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="ask.html"><i class="pe-7s-pen pe-2x pe-fw"></i></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="#"><i class="pe-7s-bell pe-2x pe-va pe-fw"></i></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="#"><i class="pe-7s-user pe-2x pe-va pe-fw"></i></a>
+        </li>
+      </ul>
     </nav>
   </header>
-
-
   <main>
+    <div class="card border-secondary border-secondary border-left-0 border-right-0 rounded-0 mb-3">
 
+      <div class="card-body p-0">
+        <h5 class="card-title m-0 p-3">What is name of your friend?</h5>
+        <p class="card-text text-secondary font-weight-light font-small px-3">asked by Aasish, 15min ago</p>
+        <div class="btn-toolbar card-footer p-0" role="toolbar" aria-label="Toolbar with button groups">
+          <div class="btn-group mr-2  w-100 d-flex justify-content-around" role="group" aria-label="First group">
+            <button type="button" class="btn btn-light"><i class="pe-7s-like2 pe-2x pe-va pe-fw"></i></button>
+            <button type="button" class="btn btn-light"><i class="pe-7s-light pe-2x pe-va pe-fw"></i></button>
+            <button type="button" class="btn btn-light"><i class="pe-7s-glasses pe-2x pe-va pe-fw"></i></button>
+            <button type="button" class="btn btn-light"><i class="pe-7s-share pe-2x pe-va pe-fw"></i></button>
+          </div>
+        </div>
+
+        <div class="card">
+	    <div class="card-body">
+	        <div class="row">
+        	    <div class="col-2 pl-1 pr-0">
+        	        <img src="images/Prajwal_Bhandari2.jpg" class="img img-size rounded-circle img-fluid"/>
+
+        	    </div>
+        	    <div class="col-9 pl-1 pr-0">
+        	        <p>
+        	            <a class="float-left" href="#"><strong>Prajwal</strong></a>
+        	       </p>
+        	       <div class="clearfix"></div>
+
+                 <p class="text-secondary font-small">15 Minutes Ago</p>
+        	        <p>I have commented this</p>
+        	        <p>
+        	            <a class="float-right btn btn-outline-danger ml-2 pl-1"><i class="pe-7s-back pe-lg pe-va pe-fw"></i> Reply</a>
+        	            <a class="float-right btn text-white btn-danger pl-1"> <i class="pe-7s-gleam pe-lg pe-va pe-fw"></i> Upvote</a>
+        	       </p>
+        	    </div>
+	        </div>
   </main>
 
   <footer>
@@ -89,6 +120,6 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
 
 <!-- typer js -->
-<script src="js/vendor/typer.js"></script>
+<!-- <script src="js/vendor/typer.js"></script> -->
 
 </html>
