@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="theme-color" content="#ffffff">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="white">
+  <meta name="apple-mobile-web-app-title" content="Foss Forum">
+  <link rel="apple-touch-icon" href="images/logo-60x50.png">
+
+  <title>Fos Forum</title>
+  <!-- bootstrap css-->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
+
+  <!-- font awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="pe-icon-7-stroke/css/pe-icon-7-stroke.css">
+
+  <!-- Optional - Adds useful class to manipulate icon font display -->
+  <link rel="stylesheet" href="pe-icon-7-stroke/css/helper.css">
+
+  <!-- manifest for phones -->
+  <link rel="manifest" href="manifest.json">
+
+  <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand navbar-light justify-content-around bg-light">
+      <a class="navbar-brand" href="#"><img src="images/fossforum-logo.png" width="80" height="30" alt=""></a>
+    </nav>
+
+    <nav class="navbar p-0 navbar-expand fixed-bottom navbar-light bg-light">
+      <ul class="nav list-unstyled w-100 m-0 d-flex flex-row flex-nowrap justify-content-around">
+        <li class="nav-item">
+          <a class="nav-link " href="./"><i class="pe-7s-home pe-2x pe-va pe-fw"></i></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="#"><i class="pe-7s-network pe-2x pe-va pe-fw"></i></a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="#"><i class="pe-7s-pen pe-2x pe-fw"></i><span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="#"><i class="pe-7s-bell pe-2x pe-va pe-fw"></i></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="#"><i class="pe-7s-user pe-2x pe-va pe-fw"></i></a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section class="ask-question mt-4">
+      <form action="">
+        <div class="form-group px-3">
+          <textarea class="form-control" id="askQuestion" rows="3"></textarea>
+        </div>
+        <div class="form-group d-flex flex-row justify-content-between align-items-center px-3">
+          <div class="d-flex align-items-center">
+
+            <label class="text-secondary m-0 p-2" for="usertype">anonymous</label>
+          <label class="switch">
+  <input id="usertype" type="checkbox">
+  <span class="slider round"></span>
+</label>
+</div>
+          <button type="submit" class="btn btn-primary">Ask</button>
+        </div>
+
+
+      </form>
+    </section>
+  </main>
+
+
+</body>
+<!-- jquery cdn-->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+
+<!--pooper js-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+
+<!--bootstrap js cdn-->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
+
+<!-- typer js -->
+<script src="js/vendor/typer.js"></script>
+
+</html>
