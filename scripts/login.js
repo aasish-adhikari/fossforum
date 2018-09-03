@@ -3,7 +3,7 @@ var sessionUsername;
 console.log('loginloaded');
 function validate(){
 
-  var username = document.getElementById("user-input").value;
+  var username = document.getElementById("userName").value;
   console.log(username);
   if(username == ''){
       document.getElementById("error-show").innerHTML = 'please enter username';
