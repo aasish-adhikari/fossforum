@@ -32,19 +32,19 @@
 <body>
   <header>
     <nav class="navbar nav-height fixed-top navbar-expand navbar-light justify-content-around bg-light">
-      <a class="navbar-brand" href="#"><img src="images/fossforum-logo.png" width="98" height="40" alt=""></a>
+      <a class="navbar-brand" href="home.html"><img src="images/fossforum-logo.png" width="98" height="40" alt=""></a>
     </nav>
 
     <nav class="navbar p-0 navbar-expand fixed-bottom navbar-light bg-light">
       <ul class="nav list-unstyled w-100 m-0 d-flex flex-row flex-nowrap justify-content-around">
         <li class="nav-item">
-          <a class="nav-link " href="./"><i class="pe-7s-home pe-2x pe-va pe-fw"></i></a>
+          <a class="nav-link " id="homeNav" href="home.html"><i class="pe-7s-home pe-2x pe-va pe-fw"></i></a>
         </li>
         <li class="nav-item">
           <a class="nav-link disabled" href="#"><i class="pe-7s-network pe-2x pe-va pe-fw"></i></a>
         </li>
         <li class="nav-item active">
-          <a class="nav-link" href="#"><i class="pe-7s-pen pe-2x pe-fw"></i><span class="sr-only">(current)</span></a>
+          <a class="nav-link" id="askNav" href="#"><i class="pe-7s-pen pe-2x pe-fw"></i><span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item">
           <a class="nav-link disabled" href="#"><i class="pe-7s-bell pe-2x pe-va pe-fw"></i></a>
@@ -57,9 +57,9 @@
   </header>
   <main>
     <section class="ask-question mt-4">
-      <form action="">
+      <form method="post" action="index.html" class="form-question">
         <div class="form-group px-3">
-          <textarea class="form-control" id="askQuestion" rows="3"></textarea>
+          <textarea class="form-control" id="askQuestion" rows="3" placeholder="Have any question to ask?"></textarea>
         </div>
         <div class="form-group d-flex flex-row justify-content-between align-items-center px-3">
           <div class="d-flex align-items-center">
@@ -70,7 +70,7 @@
   <span class="slider round"></span>
 </label>
 </div>
-          <button type="submit" class="btn btn-primary">Ask</button>
+          <button type="submit" class="btn btn-primary ask">Ask</button>
         </div>
 
 
@@ -78,8 +78,6 @@
     </section>
   </main>
 
-
-</body>
 <!-- jquery cdn-->
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 
@@ -89,7 +87,7 @@
 <!--bootstrap js cdn-->
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
 
-<!-- typer js -->
-<script src="js/vendor/typer.js"></script>
+<script src="scripts/main.js"></script>
 
+</body>
 </html>

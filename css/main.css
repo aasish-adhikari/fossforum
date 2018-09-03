@@ -9,6 +9,9 @@
 body{
   padding-top: 80px;
 }
+.main-wrapper{
+  margin-top: 30%;
+}
 .grey{
   background-color: #e2e6ea;
 }
