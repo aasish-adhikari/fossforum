@@ -10,4 +10,4 @@ class NotFound extends Component {
   }
 }
 
-export default Profile;
+export default NotFound;
