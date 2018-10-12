@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { Redirect } from 'react-router-dom';
-import OktaAuth from '@okta/okta-auth-js';
 import { withAuth } from '@okta/okta-react';
 
 
@@ -30,7 +29,7 @@ export default withAuth(class Login extends Component {
   render() {
     if (this.state.authenticated === null) return null;
     return this.state.authenticated ?
-      <Redirect to={{ pathname: '/home' }} /> :
+      <Redirect to={{ pathname: '/' }} /> :
       <LoginForm baseUrl={this.props.baseUrl} />;
 
   }

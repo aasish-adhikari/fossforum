@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './Home.css';
+import userImg from '../../images/Prajwal_Bhandari2.jpg';
 
 
 class Home extends Component {
@@ -24,13 +25,13 @@ class Home extends Component {
   	    <div className="card-body">
   	        <div className="row">
           	    <div className="col-2 pl-1 pr-0">
-          	        <img src="images/Prajwal_Bhandari2.jpg" className="img img-size rounded-circle img-fluid" alt="userimage"/>
+          	        <img src={userImg} className="img img-size rounded-circle img-fluid" alt="userimage"/>
           	    </div>
           	    <div className="col-9 pl-1 pr-0">
           	        <p>
-          	            <a className="float-left" href="#"><strong>Prajwal</strong></a>
+          	            <a className="float-left" href="/profile"><strong>Prajwal</strong></a>
           	       </p>
-          	       // <div className="clearfix"></div>
+          	       <div className="clearfix"></div>
 
                    <p className="text-secondary font-small">15 Minutes Ago</p>
           	        <p>I have commented this</p>
