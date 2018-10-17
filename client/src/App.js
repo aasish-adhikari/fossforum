@@ -40,16 +40,35 @@ class App extends Component {
       .catch(err => console.log(err));
   }
 
-  callApi = async () => {
+   callApi = async () => {
     const response = await fetch('http://localhost:3030/api',{
       mode: "no-cors"
     });
+    // console.log(response);
+
     const body = await response.json();
+
+    // console.log(body);
 
     if (response.status !== 200) throw Error(body.message);
 
+
     return body;
-  };
+
+}
+
+tryGetJSON = async (resp) => {
+  return new Promise((resolve) => {
+    if(resp){
+      resp.json()
+      .then(json => resolve(json))
+      .catch(() => resolve(null))
+    } else {
+      resolve(null)
+    }
+  })
+}
+
   render() {
     return (
         <div>

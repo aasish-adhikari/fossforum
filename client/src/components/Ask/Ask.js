@@ -9,8 +9,8 @@ export default withAuth(
   constructor(props) {
     super(props);
     this.state = {
-      question:'',
-      author:''
+      questions:'',
+      user:''
     }
     this.handleQuestionChange = this.handleQuestionChange.bind(this);
     //this.handleSubjecChange = this.handleSubjectChange.bind(this);
@@ -23,7 +23,7 @@ export default withAuth(
 
 async getCurrentUser(){
  this.props.auth.getUser()
-   .then(author => this.setState({author}));
+   .then(user => this.setState({user}));
 }
 componentDidMount(){
   console.log("Ask component mounted")
@@ -31,9 +31,11 @@ componentDidMount(){
  }
  addQuestion(e){
    e.preventDefault();
-   fetch('http://localhost:3030/api/addpost', {
+
+
+   fetch('http://localhost:3030/api/add/create', {
      method: 'POST',
-      mode: "no-cors",
+      mode: 'no-cors',
      headers: {
        Accept: 'application/json',
        'Content-Type': 'application/json',
@@ -41,7 +43,7 @@ componentDidMount(){
      body: JSON.stringify(this.state)
     }).then(response => {
      console.log('question added');
-     <Redirect to="/"/>;
+     return <Redirect to="/" />
    }).catch(err =>{
        console.log(err)
      });
@@ -49,19 +51,19 @@ componentDidMount(){
   render() {
     return (
       <section className="ask-question mt-4">
-        <form className="form-question">
+        <form className="form-question" onSubmit={this.addQuestion.bind(this)}>
           <div className="form-group px-3">
             <textarea className="form-control" id="askQuestion" rows="3" placeholder="Have any question to ask?" onChange={this.handleQuestionChange}></textarea>
           </div>
           <div className="form-group d-flex flex-row justify-content-between align-items-center px-3">
             <div className="d-flex align-items-center">
-            <label className="text-secondary m-0 p-2" for="usertype">anonymous</label>
+            <label className="text-secondary m-0 p-2" htmlFor="usertype">anonymous</label>
             <label className="switch">
               <input id="usertype" type="checkbox" />
               <span className="slider round"></span>
             </label>
           </div>
-          <a href="/" className="btn btn-primary ask">Ask</a>
+          <input type="submit" className="btn btn-primary ask" value="Ask"/>
         </div>
       </form>
     </section>
